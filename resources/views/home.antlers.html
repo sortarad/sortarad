@@ -1,4 +1,4 @@
-<div class="max-w-lg mx-auto mt-32 bg-tan font-display shadow border cursor-default window">
+<div class="max-w-sm mx-auto mt-32 bg-tan font-display shadow border cursor-default window">
     <header class="text-center py-1 flex items-center select-none">
         <div class="w-24"></div>
         <div class="lines w-full">
@@ -7,7 +7,7 @@
             <div class="bg-black h-px mt-1"></div>
         </div>
         <h1 class="uppercase px-3 flex-1 whitespace-nowrap">
-            Window Title
+            Settings
         </h1>
         <div class="lines w-full">
             <div class="bg-black h-px"></div>
@@ -18,5 +18,14 @@
             {{ svg src="img/x" class="mx-auto"}}
         </button>
     </header>
-    <section class="border-t-2 py-8"></section>
+    <section class="border-t-2 p-4">
+        <h2 class="uppercase text-center text-xs">Change Background</h2>
+        <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
+            {{ assets container="assets" folder="system-wallpapers" }}
+                <button>
+                    <img src="{{ url }}" alt="{{ filename }}" class="w-full">
+                </button>
+            {{ /assets }}
+        </div>
+    </section>
 </div>
