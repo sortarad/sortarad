@@ -19,6 +19,12 @@
 .shortcut {
     @apply text-center inline-block group p-1 relative select-none cursor-pointer;
     touch-action: none;
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
     &:focus, &:active {
         background: rgba(0,0,0,.1);
     }
@@ -27,6 +33,7 @@
 .window {
     touch-action: none;
     z-index: 20;
+
     header {
         user-select: none;
         cursor: grab;

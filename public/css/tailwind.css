@@ -2824,6 +2824,11 @@ video {
   touch-action: none;
 }
 
+.shortcut img {
+    height: 40px;
+    width: 40px;
+  }
+
 .shortcut:focus, .shortcut:active {
     background: rgba(0,0,0,.1);
   }

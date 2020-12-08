@@ -10,6 +10,29 @@
     <body class="text-black border-black font-display text-base antialiased" style="background: url('/assets/system-wallpapers/leather-teal.png')">
         {{ partial:menu-bar }}
         {{ template_content }}
+
+        <div class="absolute top-16 right-8 flex flex-col space-y-8">
+            <button class="shortcut">
+                <img src="/assets/system-icons/computer.png" alt="" class="mx-auto mb-2" />
+                <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">comp.fun</span>
+            </button>
+            <button class="shortcut">
+                <img src="/assets/system-icons/error.png" alt="" class="mx-auto mb-2" />
+                <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">404 4 FUN</span>
+            </button>
+
+            <button class="shortcut">
+                <img src="/assets/system-icons/folder.png" alt="" class="mx-auto mb-2" />
+                <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">freebiez</span>
+            </button>
+        </div>
+
+
+        <button class="shortcut absolute bottom-16 left-16">
+            <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
+            <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">surpise</span>
+        </button>
+
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
