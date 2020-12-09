@@ -1,4 +1,22 @@
 import interact from 'interactjs'
+import { createApp } from 'vue'
+
+const SortaApp = {
+  data() {
+    return {
+      message: 'hi',
+      wallpaper: '/assets/system-wallpapers/leather-teal.png'
+    }
+  },
+  methods: {
+    setWallpaper(str) {
+      this.wallpaper = str;
+    }
+  }
+}
+
+createApp(SortaApp).mount('#app')
+
 
 /***********************************************/
 /* Draggable Interaction

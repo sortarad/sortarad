@@ -550,8 +550,8 @@ video {
 @font-face {
   font-family: 'chicago';
 
-  src: url('/fonts/chicago-webfont.woff2') format('woff2'),
-        url('/fonts/chicago-webfont.woff') format('woff');
+  src: url(/fonts/chicago-webfont.woff2?3b73eab89534ddd2fda63795f149fb86) format('woff2'),
+        url(/fonts/chicago-webfont.woff?79292cb32e800d674e1ca461183c5b20) format('woff');
 
   font-weight: normal;
 
@@ -561,8 +561,8 @@ video {
 @font-face {
   font-family: 'toronto';
 
-  src: url('/fonts/toronto-webfont.woff2') format('woff2'),
-        url('/fonts/toronto-webfont.woff') format('woff');
+  src: url(/fonts/toronto-webfont.woff2?abe8213dadf39d08076a69060f364763) format('woff2'),
+        url(/fonts/toronto-webfont.woff?c8ba47732ba4e9f2c95e4f9171f576f4) format('woff');
 
   font-weight: normal;
 
@@ -105880,3 +105880,4 @@ video {
             animation: bounce 1s infinite !important;
   }
 }
+
