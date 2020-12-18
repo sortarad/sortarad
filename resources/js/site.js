@@ -1,21 +1,33 @@
 import interact from 'interactjs'
 import { createApp } from 'vue'
 
-const SortaApp = {
+import DesktopWindow from './components/DesktopWindow.vue';
+import VueClickAway from "vue3-click-away";
+
+const SortaApp = createApp({
   data() {
     return {
       message: 'hi',
-      wallpaper: '/assets/system-wallpapers/leather-teal.png'
+      wallpaper: '/assets/system-wallpapers/leather-teal.png',
+      showingSettings: false
     }
   },
   methods: {
     setWallpaper(str) {
       this.wallpaper = str;
+    },
+    showSettings() {
+      this.showingSettings = true;
     }
   }
-}
+})
 
-createApp(SortaApp).mount('#app')
+SortaApp.component('DesktopWindow', DesktopWindow)
+SortaApp.use(VueClickAway)
+SortaApp.mount('#app')
+
+
+
 
 
 /***********************************************/

@@ -10,8 +10,22 @@
     <body class="text-black border-black font-display text-base antialiased">
         <div id="app">
             {{ partial:menu-bar }}
-            <div class="desktop min-h-screen" :style="{ background: 'url(' + wallpaper  + ')' }">
-                {{ template_content }}
+            <div class="desktop min-h-screen relative" :style="{ background: 'url(' + wallpaper  + ')' }">
+
+                <desktop-window title="comp.fun" class="max-w-xl top-24">
+                    Hello! I am window.
+                </desktop-window>
+
+                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-if="showingSettings">
+                    <h2 class="uppercase text-center text-xs">Change Background</h2>
+                    <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
+                        {{ assets container="assets" folder="system-wallpapers" }}
+                            <button @click="setWallpaper('{{ url }}')">
+                                <img src="{{ glide:url height="64" width="64" }}" alt="{{ filename }}" class="w-full">
+                            </button>
+                        {{ /assets }}
+                    </div>
+                </desktop-window>
 
                 <div class="absolute top-16 right-8 flex flex-col space-y-8">
                     <button class="shortcut">
@@ -22,20 +36,16 @@
                         <img src="/assets/system-icons/error.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">404 4 FUN</span>
                     </button>
-
                     <button class="shortcut">
                         <img src="/assets/system-icons/folder.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">freebiez</span>
                     </button>
                 </div>
-
-
                 <button class="shortcut absolute bottom-16 left-16">
                     <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
                     <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">surprise</span>
                 </button>
             </div>
-        </div>
         </div>
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
