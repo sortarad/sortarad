@@ -16,7 +16,7 @@
                     Hello! I am window.
                 </desktop-window>
 
-                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-if="showingSettings">
+                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-show="showingSettings">
                     <h2 class="uppercase text-center text-xs">Change Background</h2>
                     <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
                         {{ assets container="assets" folder="system-wallpapers" }}
