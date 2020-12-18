@@ -18,6 +18,17 @@ const SortaApp = createApp({
     },
     showSettings() {
       this.showingSettings = true;
+    },
+    generateSurprise() {
+      let surprises = [
+        'https://youtu.be/oHg5SJYRHA0',
+        'https://youtu.be/FGXDKrUoVrw',
+        'https://youtu.be/HcGNqrAtsgg',
+        'https://youtu.be/l_zsz_MlVvI',
+        'http://spacejam.com/'
+      ];
+
+      window.location = surprises[Math.floor(Math.random() * surprises.length)]
     }
   }
 })
