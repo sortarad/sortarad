@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="/css/tailwind.css">
+    </head>
+    <body class="text-black border-black font-display text-base antialiased">
+        <div id="app">
+            <nav class="ui-menu-bar bg-tan px-3 flex items-center justify-between font-display shadow-sm fixed top-0 inset-x-0 z-10 select-none">
+    <div class="flex items-center space-x-2">
+        <a href="/" class="flex items-center py-1 px-2 md:mr-8 hover:bg-black hover:text-white">
+            <svg class="mr-2 relative -mt-px" width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path fill="currentColor" d="M9.33578369,8.08420429 C9.36936972,8.0851308 9.40179761,8.08953173 9.43283574,8.09740708 C9.51830639,8.09115313 9.60261891,8.08559406 9.68160398,8.08420429 C9.81803275,8.08767871 9.93894246,8.14975496 10.0098206,8.26394746 C10.0806987,8.37790833 10.0857945,8.5143371 10.0237182,8.63177238 C9.46734828,9.69772347 8.58438315,10.6290988 7.7329194,11.5292044 C7.48739394,11.7881643 7.23352988,12.0561576 6.99333187,12.3204449 C6.94492166,12.3739509 6.86894774,12.3929444 6.80154406,12.3653807 C6.75406036,12.3456923 6.71931619,12.3067789 6.70333387,12.2602217 C6.68503528,12.2803733 6.66581017,12.3005249 6.64751158,12.3204449 C6.59910137,12.3739509 6.52312746,12.3929444 6.45572377,12.3653807 C6.38832008,12.3375854 6.34523731,12.2720347 6.34685871,12.1993036 L6.36075638,11.7469345 C6.36585219,11.539396 6.37280102,11.3320891 6.37974985,11.1247823 C6.38669869,10.9262773 6.30725036,10.7740978 6.14302625,10.6740346 C6.06519932,10.6267825 5.9725482,10.595976 5.87526453,10.5783723 C5.7733483,10.5962077 5.67536975,10.627709 5.59059398,10.6772774 C5.46088242,10.7500085 5.30708156,10.8917647 5.31055598,11.1421544 C5.28994111,12.2030096 5.27442205,13.2583058 5.26052438,14.3122123 C5.25704996,14.6302372 5.50929262,14.7752362 5.61815768,14.8236464 C5.66633626,14.8447246 5.71636787,14.8588539 5.76686272,14.8697404 C5.88221336,14.8435664 5.98829889,14.7926083 6.07052676,14.7147814 C6.93959422,14.0377333 7.79476402,13.3152863 8.696491,12.4983351 L8.81925373,12.3843742 C9.84374343,11.4272882 10.9027457,10.435458 11.6351528,9.19161675 C12.0465237,8.55232405 12.1120744,7.89751229 11.8218448,7.34299537 C11.4971026,6.72292778 10.7885532,6.33402472 9.92481316,6.30460799 C9.92133874,6.30460799 9.91971735,6.30460799 9.91624293,6.3029866 C9.77240208,6.29071032 9.62879285,6.28445637 9.48541525,6.28144521 C8.33005584,6.31086194 7.18905735,6.59715389 6.07932861,6.87672863 C4.94944826,7.16163081 3.78158095,7.45533485 2.6067648,7.47432832 C2.5750318,7.47386507 2.54445693,7.4699274 2.51480857,7.46321019 C2.43026443,7.46714786 2.34572028,7.47293856 2.26117614,7.47432832 C2.12984319,7.47270693 2.01402929,7.41549487 1.94152979,7.30848283 C1.87065169,7.20309218 1.85675402,7.07175923 1.90701725,6.95432394 C2.3992263,5.7846036 3.35121652,4.80504969 4.27031558,3.85838691 C4.41878899,3.70643908 4.56401962,3.55611265 4.70577582,3.40578621 C4.7539544,3.35552298 4.82830692,3.34023555 4.89223619,3.36432484 C4.9406464,3.38216018 4.97654871,3.41991551 4.99345754,3.46600944 C5.01245102,3.44608945 5.03260263,3.4257062 5.05136449,3.40578621 C5.09977469,3.35552298 5.17412721,3.34023555 5.23805648,3.36432484 C5.30360715,3.38864576 5.34692154,3.44886898 5.35039596,3.51812569 C5.36591502,3.9257906 5.37958106,4.33183411 5.39695315,4.73787763 C5.40228059,4.93128683 5.49377356,5.07466443 5.66818929,5.16801043 C5.74485808,5.20808204 5.8333399,5.23425598 5.9266859,5.24884853 C6.06265141,5.2277704 6.19352111,5.18329787 6.30030152,5.11450441 C6.42283262,5.03667747 6.56621022,4.89492127 6.5560186,4.66005069 C6.505987,4.32650667 6.51617862,3.84448925 6.52822327,3.33490811 C6.54721675,2.50568063 6.56991627,1.47262069 6.28987827,1.14069807 C6.20301785,1.06750369 6.10550255,1.0225679 5.99988028,1.0001 C5.2206844,1.13606551 4.18090726,2.08249666 3.4327495,2.76487212 C3.12005198,3.05000593 2.85043724,3.29529976 2.63965595,3.44724759 L2.39436212,3.69254142 C1.51325001,4.56855771 0.602721174,5.47538051 0.155447914,6.63815201 C-0.0259166445,7.10812479 -0.0486161678,7.60728267 0.0880442276,8.04459594 C0.375725941,8.96740105 1.20333203,9.30418786 2.28410729,9.33499435 C3.48671877,9.30326134 4.94249942,8.95813594 6.30887175,8.63362541 C7.46816883,8.35729345 8.56168362,8.09810196 9.33578369,8.08420429"></path> </svg>
+            SortaOS
+        </a>
+        <a href="" class="py-1 px-2 hover:bg-black hover:text-white">File</a>
+        <a href="" class="py-1 px-2 hover:bg-black hover:text-white">Edit</a>
+        <button @click="showSettings" class="py-1 px-2 hover:bg-black hover:text-white outline-none">Settings</button>
+    </div>
+    <a href="" class="py-1 px-2 hover:bg-black hover:text-white">
+        9:21 PM
+    </a>
+</nav>
+
+            <div class="desktop min-h-screen relative" :style="{ background: 'url(' + wallpaper  + ')' }">
+
+                <desktop-window title="comp.fun" class="max-w-xl top-24">
+                    Hello! I am window.
+                </desktop-window>
+
+                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-show="showingSettings">
+                    <h2 class="uppercase text-center text-xs">Change Background</h2>
+                    <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/bricks.png')">
+                                <img src="/img/containers/assets/system-wallpapers/bricks.png/ec3dd9b7c9a4be0b150f90e3e9056ef3.png" alt="bricks" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/circuits.png')">
+                                <img src="/img/containers/assets/system-wallpapers/circuits.png/66ad5c754ac7169bc649d310e6a02e46.png" alt="circuits" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/clouds.jpg')">
+                                <img src="/img/containers/assets/system-wallpapers/clouds.jpg/0fe8d48b78c7b4590c63933e4817dbfe.jpg" alt="clouds" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/grass.png')">
+                                <img src="/img/containers/assets/system-wallpapers/grass.png/ca814bbd1e06f70a84154b8f35200f58.png" alt="grass" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/kittehs.png')">
+                                <img src="/img/containers/assets/system-wallpapers/kittehs.png/febf90a9cc52738023c309dc5b45bb41.png" alt="kittehs" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/leather-purple.png')">
+                                <img src="/img/containers/assets/system-wallpapers/leather-purple.png/1daafe5500dec7af76758eeb5c1d11cd.png" alt="leather-purple" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/leather-teal.png')">
+                                <img src="/img/containers/assets/system-wallpapers/leather-teal.png/02ffb0929f12944aadb1cec55c153763.png" alt="leather-teal" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/plaid.png')">
+                                <img src="/img/containers/assets/system-wallpapers/plaid.png/589c6a2448f337f2791b6cdce4c9e1b3.png" alt="plaid" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/stones.png')">
+                                <img src="/img/containers/assets/system-wallpapers/stones.png/76d76438acf11a266d395793bd00c7c1.png" alt="stones" class="w-full">
+                            </button>
+                                                    <button @click="setWallpaper('/assets/system-wallpapers/tiles.png')">
+                                <img src="/img/containers/assets/system-wallpapers/tiles.png/1c4e3f89cbbbad3d2a0d54011f67e502.png" alt="tiles" class="w-full">
+                            </button>
+                        
+                    </div>
+                </desktop-window>
+
+                <div class="absolute top-16 right-8 flex flex-col space-y-8">
+                    <button class="shortcut">
+                        <img src="/assets/system-icons/computer.png" alt="" class="mx-auto mb-2" />
+                        <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">comp.fun</span>
+                    </button>
+                    <button class="shortcut">
+                        <img src="/assets/system-icons/error.png" alt="" class="mx-auto mb-2" />
+                        <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">404 4 FUN</span>
+                    </button>
+                    <button class="shortcut">
+                        <img src="/assets/system-icons/folder.png" alt="" class="mx-auto mb-2" />
+                        <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">freebiez</span>
+                    </button>
+                </div>
+                <button class="shortcut absolute bottom-16 left-16" @dblclick="generateSurprise">
+                    <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
+                    <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">surprise</span>
+                </button>
+            </div>
+        </div>
+        <script src="/js/site.js"></script>
+    </body>
+</html>
