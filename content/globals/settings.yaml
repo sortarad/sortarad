@@ -1,0 +1,22 @@
+title: Settings
+data:
+  wallpaper:
+    - system-wallpapers/bricks.png
+    - system-wallpapers/circuits.png
+    - system-wallpapers/clouds.jpg
+    - system-wallpapers/grass.png
+    - system-wallpapers/kittehs.png
+    - system-wallpapers/leather-purple.png
+    - system-wallpapers/leather-teal.png
+    - system-wallpapers/plaid.png
+    - system-wallpapers/stones.png
+    - system-wallpapers/tiles.png
+  surprises:
+    -
+      video_url: 'https://youtu.be/oHg5SJYRHA0'
+    -
+      video_url: 'https://youtu.be/FGXDKrUoVrw'
+    -
+      video_url: 'https://youtu.be/HcGNqrAtsgg'
+    -
+      video_url: 'https://youtu.be/l_zsz_MlVvI'

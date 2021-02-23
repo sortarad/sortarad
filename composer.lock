@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98945d22005d4a1a7f8dfc0dc2e0c7ae",
+    "content-hash": "64aadeda930e570fedcb6a9143c929c2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3301,6 +3301,52 @@
                 "source": "https://github.com/reactphp/promise/tree/v2.8.0"
             },
             "time": "2020-05-12T15:16:56+00:00"
+        },
+        {
+            "name": "rias/statamic-link-it",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/riasvdv/statamic-linkit.git",
+                "reference": "39200bbdd7d31b0055b30184e169eb013822481b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/riasvdv/statamic-linkit/zipball/39200bbdd7d31b0055b30184e169eb013822481b",
+                "reference": "39200bbdd7d31b0055b30184e169eb013822481b",
+                "shasum": ""
+            },
+            "require": {
+                "pixelfear/composer-dist-plugin": "^0.1.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "download-dist": {
+                    "url": "https://github.com/riasvdv/statamic-linkit/releases/download/{$version}/dist.tar.gz",
+                    "path": "dist"
+                },
+                "statamic": {
+                    "name": "Link It",
+                    "description": "Link to anything and everything!"
+                },
+                "laravel": {
+                    "providers": [
+                        "Rias\\LinkIt\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rias\\LinkIt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Link to anything and everything!",
+            "support": {
+                "issues": "https://github.com/riasvdv/statamic-linkit/issues",
+                "source": "https://github.com/riasvdv/statamic-linkit/tree/v2.2.0"
+            },
+            "time": "2020-11-04T14:56:37+00:00"
         },
         {
             "name": "seld/jsonlint",

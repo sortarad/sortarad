@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: wallpaper
+        field:
+          mode: grid
+          container: assets
+          folder: system-wallpapers
+          restrict: true
+          allow_uploads: true
+          display: Wallpaper
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: surprises
+        field:
+          fields:
+            -
+              handle: video_url
+              field:
+                display: 'Video URL'
+                type: video
+                icon: video
+                listable: hidden
+          mode: table
+          add_row: 'Add Video Surprise'
+          reorderable: true
+          display: Surprises
+          type: grid
+          icon: grid
+          listable: hidden

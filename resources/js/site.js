@@ -9,7 +9,8 @@ const SortaApp = createApp({
     return {
       message: 'hi',
       wallpaper: '/assets/system-wallpapers/leather-teal.png',
-      showingSettings: false
+      showingSettings: false,
+      showingSurprise: false
     }
   },
   methods: {
@@ -18,6 +19,9 @@ const SortaApp = createApp({
     },
     showSettings() {
       this.showingSettings = true;
+    },
+    showSurprise() {
+      this.showingSurprise = true;
     },
     generateSurprise() {
       let surprises = [

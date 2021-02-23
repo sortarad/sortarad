@@ -27,6 +27,7 @@
                     </div>
                 </desktop-window>
 
+                {{# Top Right Icons #}}
                 <div class="absolute top-16 right-8 flex flex-col space-y-8">
                     <button class="shortcut">
                         <img src="/assets/system-icons/computer.png" alt="" class="mx-auto mb-2" />
@@ -41,10 +42,17 @@
                         <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">freebiez</span>
                     </button>
                 </div>
-                <button class="shortcut absolute bottom-16 left-16" @dblclick="generateSurprise">
+
+                {{# Surprise Button #}}
+                <button class="shortcut absolute bottom-16 left-16" @dblclick="showSurprise">
                     <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
                     <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">surprise</span>
                 </button>
+                <desktop-window title="Surprise!!!" class="top-24 right-12 z-20" v-if="showingSurprise" style="width: 832px">
+                    {{ settings:surprises sort="random" limit="1" }}
+                    <iframe width="800" height="600" autoplay src="{{ video_url | embed_url }}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {{ /settings:surprises }}
+                </desktop-window>
             </div>
         </div>
         <script src="{{ mix src='/js/site.js' }}"></script>
