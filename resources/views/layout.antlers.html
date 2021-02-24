@@ -16,7 +16,7 @@
                     Hello! I am window.
                 </desktop-window>
 
-                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-show="showingSettings">
+                <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-on:close="showingSettings = false" v-show="showingSettings">
                     <h2 class="uppercase text-center text-xs">Change Background</h2>
                     <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
                         {{ assets container="assets" folder="system-wallpapers" }}
@@ -48,7 +48,7 @@
                     <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
                     <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">surprise</span>
                 </button>
-                <desktop-window title="Surprise!!!" class="top-24 right-12 z-20" v-if="showingSurprise" style="width: 832px">
+                <desktop-window title="Surprise!!!" class="top-24 right-12 z-20" v-on:close="showingSurprise = false" v-if="showingSurprise" style="width: 832px">
                     {{ settings:surprises sort="random" limit="1" }}
                     <iframe width="800" height="600" autoplay src="{{ video_url | embed_url }}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     {{ /settings:surprises }}

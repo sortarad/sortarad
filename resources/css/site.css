@@ -39,3 +39,7 @@
         cursor: grab;
     }
 }
+
+[v-cloak] {
+    display: none;
+}
