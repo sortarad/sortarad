@@ -2,8 +2,6 @@
 /public/hot
 /public/storage
 /public/vendor/statamic
-/public/js*
-/public/css*
 /vendor
 .env
 .env.backup
