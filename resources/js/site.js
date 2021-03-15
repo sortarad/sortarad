@@ -10,8 +10,18 @@ const SortaApp = createApp({
       message: 'hi',
       wallpaper: '/assets/system-wallpapers/leather-teal.png',
       showingSettings: false,
-      showingSurprise: false
+      showingSurprise: false,
+      interval: null,
+      time: this.getTime()
     }
+  },
+  beforeUnmount() {
+    clearInterval(this.interval)
+  },
+  created() {
+    this.interval = setInterval(() => {
+      this.time = this.getTime()
+    }, 1000)
   },
   methods: {
     setWallpaper(str) {
@@ -22,6 +32,12 @@ const SortaApp = createApp({
     },
     showSurprise() {
       this.showingSurprise = true;
+    },
+    getTime() {
+      return Intl.DateTimeFormat(navigator.language, {
+        hour: 'numeric',
+        minute: 'numeric'
+      }).format()
     },
     generateSurprise() {
       let surprises = [

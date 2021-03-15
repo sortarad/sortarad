@@ -14564,8 +14564,20 @@ var SortaApp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
       message: 'hi',
       wallpaper: '/assets/system-wallpapers/leather-teal.png',
       showingSettings: false,
-      showingSurprise: false
+      showingSurprise: false,
+      interval: null,
+      time: this.getTime()
     };
+  },
+  beforeUnmount: function beforeUnmount() {
+    clearInterval(this.interval);
+  },
+  created: function created() {
+    var _this = this;
+
+    this.interval = setInterval(function () {
+      _this.time = _this.getTime();
+    }, 1000);
   },
   methods: {
     setWallpaper: function setWallpaper(str) {
@@ -14576,6 +14588,12 @@ var SortaApp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
     },
     showSurprise: function showSurprise() {
       this.showingSurprise = true;
+    },
+    getTime: function getTime() {
+      return Intl.DateTimeFormat(navigator.language, {
+        hour: 'numeric',
+        minute: 'numeric'
+      }).format();
     },
     generateSurprise: function generateSurprise() {
       var surprises = ['https://youtu.be/oHg5SJYRHA0', 'https://youtu.be/FGXDKrUoVrw', 'https://youtu.be/HcGNqrAtsgg', 'https://youtu.be/l_zsz_MlVvI', 'http://spacejam.com/'];
