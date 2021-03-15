@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        {{# <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> #}}
+        {{# <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/spruce@2.x.x/dist/spruce.umd.js"></script> #}}
     </head>
     <body class="text-black border-black font-display text-base antialiased">
         <div id="app">
             {{ partial:menu-bar }}
             <div class="desktop min-h-screen relative" :style="{ background: 'url(' + wallpaper  + ')' }">
 
-                <desktop-window title="comp.fun" class="max-w-xl top-24">
-                    Hello! I am window.
-                </desktop-window>
+                {{ template_content }}
 
                 <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-on:close="showingSettings = false" v-show="showingSettings">
                     <h2 class="uppercase text-center text-xs">Change Background</h2>
@@ -29,7 +29,7 @@
 
                 {{# Top Right Icons #}}
                 <div class="absolute top-16 right-8 flex flex-col space-y-8">
-                    <button class="shortcut">
+                    <button class="shortcut" @dblclick="goTo('/comp-fun')">
                         <img src="/assets/system-icons/computer.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-white px-1">comp.fun</span>
                     </button>
@@ -53,6 +53,9 @@
                     <iframe width="800" height="600" autoplay src="{{ video_url | embed_url }}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     {{ /settings:surprises }}
                 </desktop-window>
+                <a href="/" class="absolute bottom-8 right-8 wiggle select-none">
+                    <img src="/img/sorta-logo.png" alt="Sorta Rad Logo" width="160" height="112" />
+                </img>
             </div>
         </div>
         <script src="{{ mix src='/js/site.js' }}"></script>

@@ -31,8 +31,10 @@ const SortaApp = createApp({
         'https://youtu.be/l_zsz_MlVvI',
         'http://spacejam.com/'
       ];
-
       window.location = surprises[Math.floor(Math.random() * surprises.length)]
+    },
+    goTo(url) {
+      window.location = url;
     }
   }
 })

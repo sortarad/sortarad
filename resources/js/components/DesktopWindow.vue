@@ -17,7 +17,7 @@
                 <div class="bg-black h-px mt-1"></div>
             </div>
             <button class="w-24 outline-none relative" @click="$emit('close')">
-                <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 13 13" class="mx-auto"><line x1="1.41" y1="11.59" x2="11.59" y2="1.41" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2"/><line x1="1.41" y1="1.41" x2="11.59" y2="11.59" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2"/></svg>
+                <svg v-if="dismissable" xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 13 13" class="mx-auto"><line x1="1.41" y1="11.59" x2="11.59" y2="1.41" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2"/><line x1="1.41" y1="1.41" x2="11.59" y2="11.59" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2"/></svg>
             </button>
         </header>
         <section class="border-t-2 p-4">
@@ -28,7 +28,15 @@
 
 <script>
 module.exports = {
-    props: ['title', 'width', 'position'],
+    props: {
+        title: String,
+        width: String,
+        position: String,
+        dismissable: {
+            type: Boolean,
+            default: true
+        }
+    },
 
     emits: ['close']
 }

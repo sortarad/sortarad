@@ -10,8 +10,7 @@
 
 @font-face {
     font-family: 'toronto';
-    src: url('/fonts/toronto-webfont.woff2') format('woff2'),
-        url('/fonts/toronto-webfont.woff') format('woff');
+    src: url('/fonts/torrance-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,6 +39,52 @@
     }
 }
 
+.content {
+    @apply font-body;
+    h2 {
+        @apply text-2xl mb-8 font-display;
+    }
+    p {
+        @apply text-lg font-body;
+    }
+}
+
 [v-cloak] {
     display: none;
+}
+
+.wiggle:hover {
+    cursor: pointer;
+    animation: wiggle 0.5s infinite step-end;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes wiggle {
+
+    10%,
+    30% {
+        transform: translate3d(-1px, 0, 0) rotate(1deg);
+    }
+
+    31%,
+    40% {
+        transform: translate3d(3px, -2px, 0) rotate(4deg);
+    }
+
+    51%,
+    60% {
+        transform: translate3d(2px, 1px, 0) rotate(-3deg);
+    }
+
+    71%,
+    85 {
+        transform: translate3d(-1px, 2px, 0) rotate(5deg);
+    }
+
+    86%,
+    100% {
+        transform: translate3d(3px, -2px, 0) rotate(-1deg);
+    }
 }

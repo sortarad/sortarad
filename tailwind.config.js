@@ -10,12 +10,13 @@ module.exports = {
     theme: {
       colors: {
         'tan': '#FFFCF0',
+        'tan-darker': '#F9F5E4',
         'black': '#001A1A',
         'white': '#FFFFFF',
         'blue': '#0006ED',
       },
       fontFamily: {
-        body: ['toronto', 'sans-serif'],
+        body: ['torrance', 'sans-serif'],
         display: ['chicago', 'sans-serif'],
       },
       boxShadow: {
@@ -31,7 +32,7 @@ module.exports = {
     },
     variants: {
       extend: {
-        backgroundColor: ['group-focus', 'group-hover'],
+        backgroundColor: ['group-focus', 'group-hover', 'odd', 'even'],
         textColor: ['group-focus', 'group-hover'],
       }
     },

@@ -14434,7 +14434,15 @@ const getGlobalThis = () => {
 /***/ ((module) => {
 
 module.exports = {
-  props: ['title', 'width', 'position'],
+  props: {
+    title: String,
+    width: String,
+    position: String,
+    dismissable: {
+      type: Boolean,
+      "default": true
+    }
+  },
   emits: ['close']
 };
 
@@ -14471,13 +14479,16 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+var _hoisted_5 = {
+  key: 0,
   xmlns: "http://www.w3.org/2000/svg",
   height: "13",
   width: "13",
   viewBox: "0 0 13 13",
   "class": "mx-auto"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("line", {
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("line", {
   x1: "1.41",
   y1: "11.59",
   x2: "11.59",
@@ -14486,7 +14497,11 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   stroke: "currentColor",
   "stroke-linecap": "square",
   "stroke-width": "2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("line", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("line", {
   x1: "1.41",
   y1: "1.41",
   x2: "11.59",
@@ -14495,11 +14510,11 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   stroke: "currentColor",
   "stroke-linecap": "square",
   "stroke-width": "2"
-})], -1
+}, null, -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
+var _hoisted_8 = {
   "class": "border-t-2 p-4"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -14519,7 +14534,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return _ctx.$emit('close');
     })
-  }, [_hoisted_5])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])], 2
+  }, [_ctx.dismissable ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_5, [_hoisted_6, _hoisted_7])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])], 2
   /* CLASS */
   );
 }
@@ -14565,6 +14580,9 @@ var SortaApp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
     generateSurprise: function generateSurprise() {
       var surprises = ['https://youtu.be/oHg5SJYRHA0', 'https://youtu.be/FGXDKrUoVrw', 'https://youtu.be/HcGNqrAtsgg', 'https://youtu.be/l_zsz_MlVvI', 'http://spacejam.com/'];
       window.location = surprises[Math.floor(Math.random() * surprises.length)];
+    },
+    goTo: function goTo(url) {
+      window.location = url;
     }
   }
 });

@@ -1,31 +1,9 @@
-<div class="max-w-sm mx-auto bg-tan font-display shadow border cursor-default window relative top-32">
-    <header class="text-center py-1 flex items-center select-none">
-        <div class="w-24"></div>
-        <div class="lines w-full">
-            <div class="bg-black h-px"></div>
-            <div class="bg-black h-px mt-1"></div>
-            <div class="bg-black h-px mt-1"></div>
+<desktop-window title="{{ title }}" class="max-w-xl top-24" :dismissable="false">
+    <div class="content">
+        {{ content }}
+        <div class="">
+            {{ text }}
         </div>
-        <h1 class="uppercase px-3 flex-1 whitespace-nowrap">
-            Settings
-        </h1>
-        <div class="lines w-full">
-            <div class="bg-black h-px"></div>
-            <div class="bg-black h-px mt-1"></div>
-            <div class="bg-black h-px mt-1"></div>
-        </div>
-        <button class="w-24 text-center outline-none relative">
-            {{ svg src="img/x" class="mx-auto"}}
-        </button>
-    </header>
-    <section class="border-t-2 p-4">
-        <h2 class="uppercase text-center text-xs">Change Background</h2>
-        <div class="grid grid-flow-row grid-cols-4 gap-3 mt-4">
-            {{ assets container="assets" folder="system-wallpapers" }}
-                <button @click="setWallpaper('{{ url }}')">
-                    <img src="{{ glide:url height="64" width="64" }}" alt="{{ filename }}" class="w-full">
-                </button>
-            {{ /assets }}
-        </div>
-    </section>
-</div>
+        {{ /content }}
+    </div>
+</desktop-window>
