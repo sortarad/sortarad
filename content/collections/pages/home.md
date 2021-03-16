@@ -4,6 +4,7 @@ template: home
 updated_by: a2f39cee-0375-49bb-8141-d648c8d70946
 updated_at: 1615833910
 id: home
+blueprint: pages
 content:
   -
     type: heading
@@ -12,7 +13,7 @@ content:
     content:
       -
         type: text
-        text: 'Sorta Rad is the output rendering facility for the subconscious manifestation engine of Nick Hamze.It doesn’t have to make sense.'
+        text: 'Sorta Rad is the output rendering facility for the subconscious manifestation engine of Nick Hamze. It doesn’t have to make sense.'
   -
     type: paragraph
     content:

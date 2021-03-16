@@ -1,0 +1,12 @@
+<desktop-window title="{{ title }}.txt" class="max-w-5xl top-24" :dismissable="false">
+    <article class="content">
+        <header class="py-8">
+            {{ content }}
+        </header>
+        <div class="grid grid-flow-row grid-cols-3 gap-8 user-select-none">
+            {{ images }}
+                <a href="{{ url }}" download><img src="{{ url }}" class="wiggle" /></a>
+            {{ /images }}
+        </div>
+    </article>
+</desktop-window>

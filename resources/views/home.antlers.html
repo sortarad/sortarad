@@ -1,9 +1,7 @@
-<desktop-window title="{{ title }}" class="max-w-xl top-24" :dismissable="false">
-    <div class="content">
+<desktop-window title="{{ title }}.txt" class="max-w-xl top-24" :dismissable="false">
+    <div class="content" v-pre>
         {{ content }}
-        <div class="">
-            {{ text }}
-        </div>
+            <div>{{ text }}</div>
         {{ /content }}
     </div>
 </desktop-window>
