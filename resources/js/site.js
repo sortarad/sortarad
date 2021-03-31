@@ -1,7 +1,9 @@
 import interact from 'interactjs'
 import { createApp } from 'vue'
+// import headlessui from '@headlessui/vue'
 
 import DesktopWindow from './components/DesktopWindow.vue';
+import MenuBar from './components/MenuBar.vue';
 import VueClickAway from "vue3-click-away";
 
 const SortaApp = createApp({
@@ -56,6 +58,8 @@ const SortaApp = createApp({
 })
 
 SortaApp.component('DesktopWindow', DesktopWindow)
+SortaApp.component('MenuBar', MenuBar)
+
 SortaApp.use(VueClickAway)
 SortaApp.mount('#app')
 
