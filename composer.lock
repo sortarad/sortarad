@@ -3303,16 +3303,16 @@
         },
         {
             "name": "rebing/graphql-laravel",
-            "version": "6.3.0",
+            "version": "6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rebing/graphql-laravel.git",
-                "reference": "4a12c13ed83f0dbba0756f332038ae333635bb2a"
+                "reference": "affac63e67de1b2be79e552b1895644f4d3b141c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/4a12c13ed83f0dbba0756f332038ae333635bb2a",
-                "reference": "4a12c13ed83f0dbba0756f332038ae333635bb2a",
+                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/affac63e67de1b2be79e552b1895644f4d3b141c",
+                "reference": "affac63e67de1b2be79e552b1895644f4d3b141c",
                 "shasum": ""
             },
             "require": {
@@ -3392,9 +3392,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rebing/graphql-laravel/issues",
-                "source": "https://github.com/rebing/graphql-laravel/tree/6.3.0"
+                "source": "https://github.com/rebing/graphql-laravel/tree/6.4.0"
             },
-            "time": "2021-03-12T16:59:29+00:00"
+            "time": "2021-03-31T18:51:14+00:00"
         },
         {
             "name": "rias/statamic-link-it",

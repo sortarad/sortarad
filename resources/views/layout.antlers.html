@@ -10,10 +10,10 @@
     </head>
     <body class="text-black border-black font-display text-base antialiased">
         <div id="app">
-            <menu-bar></menu-bar>
+            {{ partial:menu-bar }}
             <div class="desktop min-h-screen relative" :style="{ background: 'url(' + wallpaper  + ')' }">
 
-                 {{ svg src="img/sorta-s" class="mr-2 relative -mt-px" }}
+                 {{ template_content }}
 
                 <desktop-window title="Settings" class="max-w-sm top-16 ml-0 left-16 z-20" v-on:close="showingSettings = false" v-show="showingSettings">
                     <h2 class="uppercase text-center text-xs">Change Background</h2>
