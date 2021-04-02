@@ -1,10 +1,10 @@
 ---
 title: Home
 template: home
-updated_by: a2f39cee-0375-49bb-8141-d648c8d70946
-updated_at: 1615833910
-id: home
+updated_by: a925b388-2334-4615-ac75-ac3dc6529350
+updated_at: 1617392254
 blueprint: pages
+id: home
 content:
   -
     type: heading
@@ -13,21 +13,13 @@ content:
     content:
       -
         type: text
-        text: 'Sorta Rad is the output rendering facility for the subconscious manifestation engine of Nick Hamze. It doesn’t have to make sense.'
+        text: 'sorta rad is the intersection between crazy and fun. It''s where you can find all the little things that make life enjoyable.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'It doesn’t have to make cents.'
-      -
-        type: hard_break
-      -
-        type: text
-        text: 'It doesn’t have to be completely rad.'
-      -
-        type: hard_break
-      -
-        type: text
-        text: 'It doesn’t have to be finishe'
+        text: 'You have two choices. You take the blue pill...the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill...you stay on sorta rad, and I show you how deep the rabbit hole goes.'
+  -
+    type: paragraph
 ---

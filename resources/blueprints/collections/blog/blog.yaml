@@ -41,13 +41,6 @@ sections:
           type: bard
           icon: bard
           listable: hidden
-      -
-        handle: testing
-        field:
-          display: Testing
-          type: toggle
-          icon: toggle
-          listable: hidden
   sidebar:
     display: Sidebar
     fields:
