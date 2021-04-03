@@ -13,7 +13,7 @@ content:
     content:
       -
         type: text
-        text: 'sorta rad is the intersection between crazy and fun. It''s where you can find all the little things that make life enjoyable.'
+        text: 'sorta rad is the intersection of crazy & fun. It''s where you can find all the little things that make life enjoyable.'
   -
     type: paragraph
     content:
