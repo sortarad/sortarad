@@ -568,6 +568,10 @@ video {
   font-style: normal;
 }
 
+body {
+  background: url(/images/leather-teal.png?a8a4a0aaa197664737e46462b5ffa357);
+}
+
 .shortcut:hover .group-hover\:bg-tan {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(255, 252, 240, var(--tw-bg-opacity)) !important;
