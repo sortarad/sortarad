@@ -2,8 +2,11 @@
 title: Home
 template: home
 updated_by: a925b388-2334-4615-ac75-ac3dc6529350
-updated_at: 1617392254
+updated_at: 1617492033
 blueprint: pages
+seo:
+  title: 'sorta rad'
+  site_name: false
 id: home
 content:
   -

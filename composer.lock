@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c95b82362656c9e83a0550985ae4a43",
+    "content-hash": "f8f98334e3df255a87de299802f4e841",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3692,6 +3692,50 @@
                 }
             ],
             "time": "2021-04-02T16:11:33+00:00"
+        },
+        {
+            "name": "statamic/seo-pro",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/statamic/seo-pro.git",
+                "reference": "22f27aeb35aae9e6b060cb7ed93768d39cd6a6ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/statamic/seo-pro/zipball/22f27aeb35aae9e6b060cb7ed93768d39cd6a6ab",
+                "reference": "22f27aeb35aae9e6b060cb7ed93768d39cd6a6ab",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "~3.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Seo Pro",
+                    "description": "Seo Pro addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Statamic\\SeoPro\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Statamic\\SeoPro\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/statamic/seo-pro/issues",
+                "source": "https://github.com/statamic/seo-pro/tree/2.2.0"
+            },
+            "time": "2021-03-26T02:02:25+00:00"
         },
         {
             "name": "statamic/ssg",

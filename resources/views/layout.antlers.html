@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <link rel="shortcut icon" type="image/png" href="/img/favicon.png" sizes="32x32"/>
+        {{ seo_pro:meta }}
     </head>
     <body class="text-black border-black font-display text-base antialiased">
         <div id="app">
