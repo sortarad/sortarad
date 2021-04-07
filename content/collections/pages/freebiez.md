@@ -1,7 +1,7 @@
 ---
-title: freebiez
+title: Freebiez
 updated_by: a925b388-2334-4615-ac75-ac3dc6529350
-updated_at: 1617393094
+updated_at: 1617829919
 blueprint: gallery
 images:
   - Statamic_Wallpaper.png

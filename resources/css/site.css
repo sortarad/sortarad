@@ -56,6 +56,16 @@ body {
     p:first-child   {
         padding-top:0em!important;
     }
+
+    a {
+        background: #000;
+        color: #fff;
+        padding: 0em .25em;
+    }
+    a:hover {
+        background: transparent;
+        color: #000;
+    }
 }
 
 [v-cloak] {
