@@ -50,6 +50,11 @@ body {
     }
     p {
         @apply text-lg font-body;
+        padding-top:1em;
+    }
+
+    p:first-child   {
+        padding-top:0em!important;
     }
 }
 

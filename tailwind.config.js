@@ -3,7 +3,8 @@ module.exports = {
       content: [
         './resources/**/*.antlers.html',
         './resources/**/*.blade.php',
-        './content/**/*.md'
+        './content/**/*.md',
+        './resources/**/*.vue'
       ]
     },
     important: true,
