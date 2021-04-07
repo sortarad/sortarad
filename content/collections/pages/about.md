@@ -1,7 +1,7 @@
 ---
 title: About
 updated_by: a925b388-2334-4615-ac75-ac3dc6529350
-updated_at: 1617830005
+updated_at: 1617830184
 blueprint: pages
 template: home
 id: 912f0cca-ba03-4693-86d7-66c2011eb9c2
@@ -23,5 +23,5 @@ content:
     content:
       -
         type: text
-        text: 'At night I do whatever random thing pops into my head. Lately it''s been collecting vintage baseball cards and collecting IBM Selectric typewriters. '
+        text: 'By night I do whatever random thing pops into my head. Lately it''s been collecting vintage baseball cards and IBM Selectric typewriters. '
 ---
