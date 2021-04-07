@@ -4,8 +4,8 @@
             {{ svg src="img/sorta-s" class="mr-2 relative -mt-px" }}
             SortaOS
         </a>
-        <a href="" class="py-1 px-2 hover:bg-black hover:text-white">File</a>
-        <a href="" class="py-1 px-2 hover:bg-black hover:text-white">Edit</a>
+        <button @click="goTo('/about')" class="py-1 px-2 hover:bg-black hover:text-white">About</button>
+        <button @click="goTo('/projects')" class="py-1 px-2 hover:bg-black hover:text-white">Projects</button>
         <button @click="showSettings" class="py-1 px-2 hover:bg-black hover:text-white outline-none">Settings</button>
     </div>
     <div class="py-1 px-2 hover:bg-black hover:text-white" v-text="time" v-cloak></div>

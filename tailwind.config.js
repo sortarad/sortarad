@@ -36,5 +36,8 @@ module.exports = {
         textColor: ['group-focus', 'group-hover'],
       }
     },
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/typography'),
+      // ...
+    ],
   }
