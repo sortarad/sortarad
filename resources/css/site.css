@@ -46,15 +46,11 @@ body {
 .content {
     @apply font-body;
     h2 {
-        @apply text-2xl mb-8 font-display;
+        @apply text-2xl font-display;
     }
     p {
         @apply text-lg font-body;
         padding-top:1em;
-    }
-
-    p:first-child   {
-        padding-top:0em!important;
     }
 
     a {
@@ -66,6 +62,10 @@ body {
         background: transparent;
         color: #000;
     }
+}
+
+.content p:first-child   {
+    padding-top:0em!important;
 }
 
 [v-cloak] {
