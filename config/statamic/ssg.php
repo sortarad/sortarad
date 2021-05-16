@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'base_url' => config('https://sortarad.io'),
+    'base_url' => config('app.url'),
 
     /*
     |--------------------------------------------------------------------------
