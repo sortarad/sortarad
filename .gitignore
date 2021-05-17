@@ -3,7 +3,6 @@
 /public/storage
 /public/vendor/statamic
 /vendor
-.env
 .env.backup
 .phpunit.result.cache
 .php_cs.cache
