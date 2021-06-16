@@ -41,6 +41,16 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          enable_input_rules: true
+          enable_paste_rules: true
+      -
+        handle: embed
+        field:
+          antlers: false
+          display: Embed
+          type: textarea
+          icon: textarea
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -60,3 +70,12 @@ sections:
           required: true
           validate:
             - required
+  SEO:
+    display: SEO
+    fields:
+      -
+        handle: seo
+        field:
+          type: seo_pro
+          listable: false
+          display: SEO
