@@ -9,16 +9,16 @@
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.0.4",
-        "autoprefixer": "^9.8.6",
-        "cross-env": "^5.1",
-        "laravel-mix": "^6.0.0-beta.15",
-        "postcss": "^8.2.0",
+        "autoprefixer": "^10.2.6",
+        "cross-env": "^5.2.1",
+        "laravel-mix": "^6.0.24",
+        "postcss": "^8.3.5",
         "postcss-import": "^12.0.1",
-        "postcss-nested": "^4.2.1",
+        "postcss-nested": "^4.2.3",
         "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
-        "vue": "^3.0.4",
-        "vue-loader": "^16.1.1"
+        "tailwindcss": "^2.2.2",
+        "vue": "^3.1.1",
+        "vue-loader": "^16.2.0"
     },
     "dependencies": {
         "@headlessui/vue": "^0.2.0",
