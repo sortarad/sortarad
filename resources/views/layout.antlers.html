@@ -29,22 +29,22 @@
 
                 {{# Top Right Icons #}}
                 <div class="absolute top-16 right-8 flex flex-col space-y-8">
-                    <button class="shortcut" @dblclick="goTo('/comp-fun')">
+                    <button class="shortcut" @click="goTo('/comp-fun')">
                         <img src="/assets/system-icons/computer.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-black px-1">comp.fun</span>
                     </button>
-                    <button class="shortcut" @dblclick="goTo('https://lilpics.sortarad.io')">
+                    <button class="shortcut" @click="goTo('https://lilpics.sortarad.io')">
                         <img src="/assets/system-icons/error.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-black px-1">lil pics</span>
                     </button>
-                    <button class="shortcut" @dblclick="goTo('/freebiez')">
+                    <button class="shortcut" @click="goTo('/freebiez')">
                         <img src="/assets/system-icons/folder.png" alt="" class="mx-auto mb-2" />
                         <span class="bg-tan group-focus:bg-blue group-focus:text-black px-1">freebiez</span>
                     </button>
                 </div>
 
                 {{# Surprise Button #}}
-                <button class="shortcut absolute bottom-16 left-16" @dblclick="showSurprise">
+                <button class="shortcut absolute bottom-16 left-16" @click="showSurprise">
                     <img src="/assets/system-icons/minesweeper.png" alt="" class="mx-auto mb-2" />
                     <span class="bg-tan group-focus:bg-blue group-focus:text-black px-1">surprise</span>
                 </button>
